@@ -142,7 +142,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     clearBtn.addEventListener('click', clearAllClasses);
-
+    
+     // Add new goal
+addGoalBtn.addEventListener('click', function() {
+    const text = goalInput.value.trim();
+    if (!text) return;
+    
+    const newGoal = {
+        id: Date.now(),
+        text: text,
+        type: document.getElementById('goalType').value,
+        priority: document.getElementById('goalPriority').value,
+        completed: false,
+        date: new Date().toDateString(),
+        time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+    };
+    
+    goals.push(newGoal);
+    saveGoals();
+    renderGoals();
+    goalInput.value = '';
+    
     // Week navigation
     prevWeekBtn.addEventListener('click', () => {
         if (currentWeek > 1) {
