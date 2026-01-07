@@ -162,6 +162,10 @@ addGoalBtn.addEventListener('click', function() {
     saveGoals();
     renderGoals();
     goalInput.value = '';
+
+    // Show notification
+    showNotification('Goal added successfully!');
+});
     
     // Week navigation
     prevWeekBtn.addEventListener('click', () => {
