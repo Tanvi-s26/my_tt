@@ -166,7 +166,20 @@ addGoalBtn.addEventListener('click', function() {
     // Show notification
     showNotification('Goal added successfully!');
 });
+
+    // Toggle goal completion
+function toggleGoal(e) {
+    const index = e.target.dataset.index;
+    goals[index].completed = !goals[index].completed;
+    saveGoals();
+    renderGoals();
     
+    if (goals[index].completed) {
+        showNotification('Goal completed! Great job!');
+        checkForAchievements();
+    }
+}
+
     // Week navigation
     prevWeekBtn.addEventListener('click', () => {
         if (currentWeek > 1) {
