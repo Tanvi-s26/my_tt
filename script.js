@@ -203,6 +203,22 @@ function toggleGoal(e) {
         }
     });
 
+    // Update progress stats
+function updateProgress() {
+    const total = goals.length;
+    const completed = goals.filter(goal => goal.completed).length;
+    const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
+    
+    goalsProgress.textContent = `${completed}/${total}`;
+    goalsPercentage.textContent = `${percentage}%`;
+    
+    // Update progress bar color
+    goalsPercentage.style.color = percentage === 100 ? '#4CAF50' : 
+                                 percentage >= 50 ? '#FFA000' : 
+                                 '#F44336';
+}
+    
+
     // Initialize
     initTimetable();
 });
