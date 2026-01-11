@@ -202,6 +202,7 @@ function toggleGoal(e) {
             classForm.reset();
         }
     });
+    
 
     // Update progress stats
 function updateProgress() {
@@ -211,6 +212,11 @@ function updateProgress() {
     
     goalsProgress.textContent = `${completed}/${total}`;
     goalsPercentage.textContent = `${percentage}%`;
+
+    // Save goals to localStorage
+function saveGoals() {
+    localStorage.setItem('dailyGoals', JSON.stringify(goals));
+}
     
     // Update progress bar color
     goalsPercentage.style.color = percentage === 100 ? '#4CAF50' : 
