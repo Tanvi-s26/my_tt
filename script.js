@@ -225,6 +225,13 @@ function saveGoals() {
 }
     
 
+    // Add keyboard shortcut for adding goals
+goalInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        addGoalBtn.click();
+    }
+});
+    
     // Initialize
     initTimetable();
 });
