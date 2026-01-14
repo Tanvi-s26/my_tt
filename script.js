@@ -223,6 +223,11 @@ function saveGoals() {
                                  percentage >= 50 ? '#FFA000' : 
                                  '#F44336';
 }
+
+    // Check and award achievements
+function checkForAchievements() {
+    const today = new Date().toDateString();
+    const completedToday = goals.filter(g => g.completed && g.date === today).length;
     
 
     // Add keyboard shortcut for adding goals
