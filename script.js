@@ -228,8 +228,12 @@ function saveGoals() {
 function checkForAchievements() {
     const today = new Date().toDateString();
     const completedToday = goals.filter(g => g.completed && g.date === today).length;
-    
 
+     // Achievement: Perfect Day
+    if (goals.length > 0 && goals.every(g => g.completed) && !achievements.includes('perfectDay')) {
+        awardAchievement('perfectDay', '🌟 Perfect Day', 'Completed all daily goals');
+    }
+    
     // Add keyboard shortcut for adding goals
 goalInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
