@@ -233,6 +233,11 @@ function checkForAchievements() {
     if (goals.length > 0 && goals.every(g => g.completed) && !achievements.includes('perfectDay')) {
         awardAchievement('perfectDay', '🌟 Perfect Day', 'Completed all daily goals');
     }
+
+     // Achievement: Goal Master
+    if (completedToday >= 5 && !achievements.includes('goalMaster')) {
+        awardAchievement('goalMaster', '🎯 Goal Master', 'Completed 5 goals in one day');
+    }
     
     // Add keyboard shortcut for adding goals
 goalInput.addEventListener('keypress', function(e) {
