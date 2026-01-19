@@ -238,6 +238,13 @@ function checkForAchievements() {
     if (completedToday >= 5 && !achievements.includes('goalMaster')) {
         awardAchievement('goalMaster', '🎯 Goal Master', 'Completed 5 goals in one day');
     }
+
+    // Achievement: Early Bird (complete goal before 9 AM)
+    const now = new Date();
+    if (now.getHours() < 9 && completedToday > 0 && !achievements.includes('earlyBird')) {
+        awardAchievement('earlyBird', '🐦 Early Bird', 'Completed a goal before 9 AM');
+    }
+}
     
     // Add keyboard shortcut for adding goals
 goalInput.addEventListener('keypress', function(e) {
