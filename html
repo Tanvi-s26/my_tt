@@ -51,7 +51,47 @@
             <button class="period-btn" data-period="all">All Time</button>
         </div>
     </div>
-            
+
+            <!-- Reminder Settings -->
+    <div class="reminder-settings">
+        <div class="setting-item">
+            <i class="fas fa-volume-up"></i>
+            <div class="setting-info">
+                <strong>Browser Notifications</strong>
+                <p>Get browser notifications for upcoming classes</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="browserNotifications">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="setting-item">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="setting-info">
+                <strong>Desktop Alerts</strong>
+                <p>Show desktop notifications (requires permission)</p>
+            </div>
+            <button id="requestNotification" class="btn btn-small">
+                Enable
+            </button>
+        </div>
+        
+        <div class="setting-item">
+            <i class="fas fa-clock"></i>
+            <div class="setting-info">
+                <strong>Reminder Time</strong>
+                <p>How many minutes before class to remind you</p>
+            </div>
+            <select id="reminderTime" class="reminder-select">
+                <option value="5">5 minutes before</option>
+                <option value="10" selected>10 minutes before</option>
+                <option value="15">15 minutes before</option>
+                <option value="30">30 minutes before</option>
+                <option value="60">1 hour before</option>
+            </select>
+        </div>
+    </div>          
         <!-- Add Class Modal -->
         <div id="addClassModal" class="modal">
             <div class="modal-content">
