@@ -26,7 +26,7 @@ That's it! Everything saves automatically in your browser.
 
     Didn't work offline
 
-    Looked ugly
+ 
 
 
 So I made this simple version that just works.
