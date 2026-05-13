@@ -15,7 +15,7 @@ timetable-app/
     - Start adding your classes - no setup needed!
 That's it! Everything saves automatically in your browser.
 
-- Why I Built This
+- Why I Built This:
 
 - I tried several timetable apps but they were either:
 
