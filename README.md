@@ -28,5 +28,4 @@ timetable-app/
 
  
 
-
 - So I made this simple version that just works.
