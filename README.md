@@ -7,7 +7,6 @@ timetable-app/
 ├── style.css           # All styling
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
-
 - Quick Start
 
     - Download the files (or clone the repo)
