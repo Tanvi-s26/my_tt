@@ -1,6 +1,5 @@
 - File Structure:
 
-
 timetable-app/
 ├── index.html          # Main HTML file
 ├── style.css           # All styling
