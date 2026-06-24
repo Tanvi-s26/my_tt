@@ -25,5 +25,4 @@ timetable-app/
 
     Didn't work offline
 
-
 - So I made this simple version that just works.
