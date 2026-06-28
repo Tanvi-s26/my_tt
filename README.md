@@ -14,6 +14,7 @@ timetable-app/
   
  That's it! Everything saves automatically in your browser.
 
+
 - Why I Built This:
 
 - I tried several timetable apps but they were either:
