@@ -7,7 +7,6 @@ timetable-app/
 - Quick Start
 
     - Download the files (or clone the repo)
-
     - Open index.html in your browser
 
     - Start adding your classes - no setup needed
