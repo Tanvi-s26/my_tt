@@ -5,7 +5,6 @@ timetable-app/
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
 - Quick Start
-
     - Download the files (or clone the repo)
     - Open index.html in your browser
 
