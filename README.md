@@ -13,7 +13,7 @@ timetable-app/
 
  That's it! Everything saves 
  
- automatically in your browser.
+automatically in your browser.
  
 - Why I Built This:
 
