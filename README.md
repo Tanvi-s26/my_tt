@@ -1,5 +1,4 @@
 
-
 - File Structure:
 timetable-app/
 ├── index.html          # Main HTML file
@@ -11,7 +10,6 @@ timetable-app/
     - Open index.html in your browser
 
     - Start adding your classes - no setup needed
-
  That's it! Everything saves 
  
 automatically in your browser.
